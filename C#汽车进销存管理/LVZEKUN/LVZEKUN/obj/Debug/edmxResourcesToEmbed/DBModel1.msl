@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CarModelStoreContainer" CdmEntityContainer="CarEntities">
+    <EntitySetMapping Name="customers">
+      <EntityTypeMapping TypeName="CarModel.customer">
+        <MappingFragment StoreEntitySet="customer">
+          <ScalarProperty Name="编号" ColumnName="编号" />
+          <ScalarProperty Name="姓名" ColumnName="姓名" />
+          <ScalarProperty Name="身份证号" ColumnName="身份证号" />
+          <ScalarProperty Name="性别" ColumnName="性别" />
+          <ScalarProperty Name="年龄" ColumnName="年龄" />
+          <ScalarProperty Name="地址" ColumnName="地址" />
+          <ScalarProperty Name="手机号" ColumnName="手机号" />
+          <ScalarProperty Name="车型" ColumnName="车型" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="CarModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

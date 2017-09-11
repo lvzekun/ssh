@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="CAR" extends="struts-default" >
+	   <!-- 显示汽车界面-->
+       <action name="showCar" class="car1" method="show">
+          <result name="success">/car1/showCar.jsp</result>
+       
+       </action>
+       
+        <action name="incar" class="car1" method="incar">
+          <result name="success"  type="redirectAction" >showCar</result>
+       
+        </action>
+        
+        <!-- 清理信息表，首先备份操作 -->
+        <action name="Backup" class="car1" method="backup">
+          <result name="success"  type="redirectAction" >showCar</result>
+       
+        </action>
+        
+        <action name="showback" class="car1" method="showbackup">
+          <result name="success" >/car1/showback.jsp</result>
+       
+         </action>
+         
+       </package>
+       
+</struts>    

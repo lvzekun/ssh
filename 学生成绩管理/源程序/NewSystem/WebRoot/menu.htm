@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<LINK href="css/admin.css" type="text/css" rel="stylesheet">
+ <script tyle='css/javascript'>
+ function _set(sp_id)
+ {
+  var x=document.getElementsByTagName('span');
+  for (var i=0;i<x.length;i++) {
+     x[i].style.color='#036';
+    }
+      sp_id.style.color='red';
+ }
+ </script>
+ <!--框架必需start-->
+<script type="text/javascript" src="../js/jquery-1.4.js">
+	
+</script>
+<script type="text/javascript" src="../js/framework.js">
+	
+</script>
+<link href="../css/import_basic.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" id="skin" />
+<!--框架必需end-->
+<script type="text/javascript" src="../js/nav/ddaccordion.js">
+	
+</script>
+<script type="text/javascript" src="../js/text/text-overflow.js">
+	
+</script>
+<style>
+a {
+	
+}
+
+.categoryitems span {
+	width: 160px;
+}
+</style>
+</HEAD>
+<BODY>
+
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width=170 
+background=images/menu_bg.jpg border=0>
+
+  <TR>
+    <TD vAlign=top align=middle>
+      <TABLE cellSpacing=0 cellPadding=0 width=150  border=0>
+      <tr>
+      <TD style="PADDING-LEFT: 7px">
+        
+       <p style="FONT-SIZE: 20px">
+      
+       <span id='sp_1' Onclick='_set(sp_1)'>班级管理</span>
+       
+       </p></TD>
+      </tr>
+        <TR height=55>          
+       
+           <TD style="PADDING-LEFT: 7px">
+        
+           <p style="FONT-SIZE: 15px">
+          
+           <A href="listAllClass.action" target="main" >
+              <span id='sp_1' Onclick='_set(sp_1)'>查看班级</span>
+           </A>
+           </p> 
+           <td height=20>             
+           <p style="FONT-SIZE: 15px">
+           <A href="main/AddClass.jsp"  target="main">
+            <span>添加班级</span>
+           </A>         
+             </p>
+           </td>
+          
+          
+              
+         </TR>
+  </TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=150  border=0>
+<TR>
+    <TD vAlign=top align=middle>
+      <TABLE cellSpacing=0 cellPadding=0 width=150  border=0>
+      <tr>
+      <TD style="PADDING-LEFT: 7px">
+        
+       <p style="FONT-SIZE: 20px">
+       <span id='sp_1' Onclick='_set(sp_1)'>课程管理</span>
+       </p></TD>
+      </tr>
+        <TR height=55>          
+       
+           <TD style="PADDING-LEFT: 7px">
+        
+           <p style="FONT-SIZE: 15px">
+          
+           <A href="listAllCoures.action" target="main" >
+              <span id='sp_1' Onclick='_set(sp_1)'>查看课程</span>
+           </A>
+           </p> 
+           <td height=20>             
+           <p style="FONT-SIZE: 15px">
+           <A href="main/AddCoures.jsp"  target="main">
+           <!-- menu没在文件夹中 -->
+            <span>添加课程</span>
+           </A>         
+             </p>
+           </td>
+           </TR>
+         
+ </TABLE>
+ <TABLE cellSpacing=0 cellPadding=0 width=150  border=0>
+<TR>
+    <TD vAlign=top align=middle>
+      <TABLE cellSpacing=0 cellPadding=0 width=150  border=0>
+      <tr>
+      <TD style="PADDING-LEFT: 9px">
+        
+       <p style="FONT-SIZE: 20px">
+       <span id='sp_1' Onclick='_set(sp_1)'>学生管理</span>
+       </p></TD>
+      </tr>
+        <TR height=30>          
+       
+           <TD style="PADDING-LEFT: 9px">
+        
+           <p style="FONT-SIZE: 15px">
+          
+           <A href="listAllStudyer.action" target="main" >
+              <span id='sp_1' Onclick='_set(sp_1)'>查看学生信息</span>
+           </A>
+           </p> 
+           </TD>
+           </TR>
+    
+          <TR height=30>          
+       
+           <TD style="PADDING-LEFT: 9px">
+        
+           <p style="FONT-SIZE: 15px">
+           <A href="main/AddStudyer.jsp"  target="main">
+           <!-- menu没在文件夹中 -->
+            <span>添加学生信息</span>
+           </A>         
+             </p>
+           </td>
+       </TR>
+         
+ </TABLE>
+ 
+   <TABLE cellSpacing=0 cellPadding=0 width=150  border=0>
+        <TR height=55>
+          <TD style="PADDING-LEFT: 7px">
+          <p style="FONT-SIZE: 15px">
+          <A href="chengji.action" target="main" >
+          <span id='sp_3' Onclick='_set(sp_2)'>添加成绩管理</span>
+          </A></p>
+          </TD>
+         </TR>
+       </TABLE>
+        <TABLE cellSpacing=0 cellPadding=0 width=150  border=0>
+        <TR height=55>
+          <TD style="PADDING-LEFT: 7px">
+          <p style="FONT-SIZE: 15px">
+          <A href="showScore.action" target="main" >
+          <span id='sp_3' Onclick='_set(sp_2)'>查看成绩管理</span>
+          </A></p>
+          </TD>
+         </TR>
+       </TABLE>
+      
+
+
+     </TD>
+  </TR>
+  </ul>
+  </TABLE>
+  
+  </BODY>
+  </HTML>
